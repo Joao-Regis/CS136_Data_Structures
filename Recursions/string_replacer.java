@@ -1,15 +1,19 @@
-
+import java.util.Scanner;
 
 public class string_replacer 
 {
   public static void main(String[] args) 
   {
-    String rplcMssg;
-    String word = "Hello";
+    Scanner keyboard = new Scanner(System.in);
+        
+    System.out.print("Enter a word to be recursively replaced: ");
+    String word = keyboard.nextLine();
+
     int start = 0;
     int charRplcd = 0;
     strRplc(word, start, charRplcd);
-    //System.out.println(strRplc(word));        
+    
+    keyboard.close();      
   }
 
   public static void strRplc(String str, int index, int lettersReplaced)
