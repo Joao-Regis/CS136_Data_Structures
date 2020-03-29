@@ -9,7 +9,8 @@ public class myList_Mod
         
         
         MyList<Integer> demoListInt = new MyList<Integer>();
-        
+        System.out.println("demoListInt object created.");
+
         System.out.print("Enter the first of three Integers: ");
         Integer int1 = keyboard.nextInt();
         demoListInt.add(int1);
@@ -26,7 +27,8 @@ public class myList_Mod
         keyboard.nextLine();
 
         MyList<String> demoListString = new MyList<String>();
-
+        System.out.println("demoListString object created.");
+        
         System.out.print("Enter the first of three Strings: ");
         String str1 = keyboard.nextLine();
         demoListString.add(str1);
@@ -39,12 +41,12 @@ public class myList_Mod
         String str3 = keyboard.nextLine();
         demoListString.add(str3);
 
-        System.out.println("largest element from demoListInt: " + demoListInt.largest());
-        System.out.println("smallest element from demoListInt: " + demoListInt.smallest());
+        System.out.println("largest element of demoListInt object: " + demoListInt.largest());
+        System.out.println("smallest element of demoListInt object: " + demoListInt.smallest());
 
 
-        System.out.println("demoListString largest element: " + demoListString.largest());
-        System.out.println("demoListString smallest element: " + demoListString.smallest());
+        System.out.println("largest element of demoListString : " + demoListString.largest());
+        System.out.println("smallest element of demoListString : " + demoListString.smallest());
         keyboard.close();
     }
     
