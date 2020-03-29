@@ -27,8 +27,8 @@ public class myList_Mod
         keyboard.nextLine();
 
         MyList<String> demoListString = new MyList<String>();
-        System.out.println("demoListString object created.");
-        
+        System.out.println("\ndemoListString object created.");
+
         System.out.print("Enter the first of three Strings: ");
         String str1 = keyboard.nextLine();
         demoListString.add(str1);
