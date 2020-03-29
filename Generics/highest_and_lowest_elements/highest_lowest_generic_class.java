@@ -4,18 +4,24 @@ public class highest_lowest_generic_class<T extends Comparable<T>>
 
     public highest_lowest_generic_class(T[] arrayofTobjects) 
     {
-        
+        hgh_lw_Array = arrayofTobjects;
     }
 
 
     public T highest()
     {
-        return highestValObj;
+        T highestGenericClassObj;
+        highestGenericClassObj = hgh_lw_Array[0];
+
+        return highestGenericClassObj;
     }
 
     public T lowest()
     {
-        return lowestValObj;
+        T lowestGenericClassObj;
+        lowestGenericClassObj = hgh_lw_Array[0];
+
+        return lowestGenericClassObj;
     }
    
 
