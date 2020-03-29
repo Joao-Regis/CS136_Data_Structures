@@ -22,6 +22,7 @@ public class myList_Mod
         Integer int3 = keyboard.nextInt();
         demoListInt.add(int3);
         
+        //consume the remaining newline.
         keyboard.nextLine();
 
         MyList<String> demoListString = new MyList<String>();
