@@ -13,6 +13,14 @@ public class highest_lowest_generic_class<T extends Comparable<T>>
         T highestGenericClassObj;
         highestGenericClassObj = hgh_lw_Array[0];
 
+        for(int i = 1; i < hgh_lw_Array.length; i++)
+        {
+            if(hgh_lw_Array[i].compareTo(highestGenericClassObj) > 0)
+            {
+                highestGenericClassObj = hgh_lw_Array[i];
+            }
+        }
+
         return highestGenericClassObj;
     }
 
@@ -20,6 +28,14 @@ public class highest_lowest_generic_class<T extends Comparable<T>>
     {
         T lowestGenericClassObj;
         lowestGenericClassObj = hgh_lw_Array[0];
+
+        for(int i = 1; i < hgh_lw_Array.length; i++)
+        {
+            if(hgh_lw_Array[i].compareTo(lowestGenericClassObj) < 0)
+            {
+                lowestGenericClassObj = hgh_lw_Array[i];
+            }
+        }
 
         return lowestGenericClassObj;
     }
